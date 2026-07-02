@@ -40,4 +40,4 @@ README is maintained in three languages: `README.md` (English), `README.ja.md` (
 
 ## See Also
 
-`admin-skills` (zytakeshi/admin-skills) is the sister repo with the broader `/deploy`, `/commit-push`, `/create-pr`, `/codex`, `/codexloop`, `/fleet-review`, `/team`, `/finish-translation`, `/html-specialist` skills.
+`admin-skills` (zytakeshi/admin-skills) is the sister repo with the broader `/deploy`, `/commit-push`, `/create-pr`, `/codex`, `/codexloop`, `/fleet-review`, `/team`, `/finish-translation`, `/html` skills.
