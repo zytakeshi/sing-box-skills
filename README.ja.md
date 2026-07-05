@@ -49,7 +49,7 @@ npx skills add zytakeshi/sing-box-skills@singbox-config
 
 ## 関連プロジェクト
 
-- [admin-skills](https://github.com/zytakeshi/admin-skills) — システム管理・DevOps スキル: `/deploy`、`/commit-push`、`/create-pr`、`/codex`、`/codexloop`、`/fleet-review`、`/team`、`/finish-translation`、`/html`
+- [admin-skills](https://github.com/zytakeshi/admin-skills) — システム管理、PR、レビュー、ブラウザ自動化、ライブ調査、モデルルーティング用スキル集。`/deploy`、`/create-pr`、`/codex`、`/codex-test`、`/ask-chatgpt-pro`、`/ask-grok`、`/cdp-chrome`、`/fleet-review`、`/team`、`/finish-translation`、`/html`、`/fable5` など
 - [statusline4claudecode](https://github.com/zytakeshi/statusline4claudecode) — Claude Code 用カスタムステータスライン
 
 ## ライセンス

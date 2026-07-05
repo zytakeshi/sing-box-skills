@@ -49,7 +49,7 @@ After installing, use the skills in Claude Code:
 
 ## See Also
 
-- [admin-skills](https://github.com/zytakeshi/admin-skills) — Sysadmin / DevOps skills: `/deploy`, `/commit-push`, `/create-pr`, `/codex`, `/codexloop`, `/fleet-review`, `/team`, `/finish-translation`, `/html`
+- [admin-skills](https://github.com/zytakeshi/admin-skills) — Sysadmin, PR, review, browser automation, live-research, and model-routing skills including `/deploy`, `/create-pr`, `/codex`, `/codex-test`, `/ask-chatgpt-pro`, `/ask-grok`, `/cdp-chrome`, `/fleet-review`, `/team`, `/finish-translation`, `/html`, and `/fable5`
 - [statusline4claudecode](https://github.com/zytakeshi/statusline4claudecode) — A custom status line for Claude Code
 
 ## License
