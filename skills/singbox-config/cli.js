@@ -12,7 +12,6 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 
-// 解析命令行参数
 function parseArgs() {
     const args = process.argv.slice(2);
     const options = {
@@ -61,7 +60,6 @@ Sing-box 配置生成器
     return options;
 }
 
-// 读取输入
 async function readInput(inputPath) {
     if (inputPath) {
         return fs.readFileSync(inputPath, 'utf-8');
@@ -86,7 +84,6 @@ async function readInput(inputPath) {
     });
 }
 
-// 主函数
 async function main() {
     const options = parseArgs();
     const scriptDir = __dirname;
@@ -126,7 +123,6 @@ async function main() {
 
     const { protocolForClash, protocolForSingBox } = sandbox;
 
-    // 读取输入
     const input = (await readInput(options.input)).trim();
 
     if (!input) {
@@ -134,7 +130,6 @@ async function main() {
         process.exit(1);
     }
 
-    // Base64 解码函数
     const base64Decode = (str) => {
         try {
             const padded = str + '='.repeat((4 - str.length % 4) % 4);
@@ -225,11 +220,9 @@ async function main() {
 
     const template = JSON.parse(fs.readFileSync(templatePath, 'utf-8'));
 
-    // 加载处理脚本
     const versionScriptContent = fs.readFileSync(versionScriptPath, 'utf-8');
     const processFunc = new Function(versionScriptContent + '; return { processConfig, getTags };')();
 
-    // 处理配置
     const config = processFunc.processConfig(singboxProxies, template);
 
     // 输出

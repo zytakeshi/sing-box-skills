@@ -122,7 +122,7 @@ const onSubscribe = async (proxies) => {
 
   const isClashProxies = proxies.some((proxy) => proxy.name && !proxy.tag);
 
-  // 如果是clash格式，并且是GFS，则转为sing-box格式
+  // 如果是clash格式，并且应用标题包含SingBox，则转为sing-box格式
   if (isClashProxies && Plugins.APP_TITLE.includes("SingBox")) {
     const _proxies = [];
     const protocolForSingBoxMap = protocolForSingBox();
@@ -257,7 +257,7 @@ function getIfPresent(obj, defaultValue) {
  * + if (proxy.tls && params.sni) {
  */
 
-// Parse SS URI format (only supports new SIP002, legacy format is depreciated).
+// Parse SS URI format (supports SIP002 and legacy Base64 format).
 // reference: https://github.com/shadowsocks/shadowsocks-org/wiki/SIP002-URI-Scheme
 function URI_SS() {
   // TODO: 暂不支持 httpupgrade
@@ -701,7 +701,6 @@ function URI_VLESS() {
         opts["short-id"] = params.sid;
       }
       if (Object.keys(opts).length > 0) {
-        // proxy[`${params.security}-opts`] = opts;
         proxy[`${params.security}-opts`] = opts;
       }
     }
