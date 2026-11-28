@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Rules for every coding agent in this repository. `AGENTS.md` is a symlink to this file.
 
 ## Project Overview
 
